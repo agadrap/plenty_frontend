@@ -2,8 +2,6 @@ $(document).ready(() => {
 	console.log("I'm ready");
 	let tbody = $('tbody');
 	downloadPlants(tbody);
-	let container = $('.container');
-	let details = $('#details');
 
 	tbody.on('click','.btn', function (){
 		let id = parseInt(this.dataset.id);
@@ -15,6 +13,8 @@ $(document).ready(() => {
 		}).done(function (response){
 			console.log(response.latin_name);
 			console.log(response.description);
+			//redirect to new page with plant details plant_details.html
+			window.location.replace("http://www.w3schools.com");
 		})
 	});
 
