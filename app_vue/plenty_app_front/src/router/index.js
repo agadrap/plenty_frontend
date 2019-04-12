@@ -5,6 +5,10 @@ import About from '@/components/About'
 import Login from '@/components/Login'
 import Signin from '@/components/Signin'
 import Contact from '@/components/Contact'
+import Profile from '@/components/Profile'
+import MyPlants from '@/components/MyPlants'
+import Reminders from '@/components/Reminders'
+import AllPlants from '@/components/AllPlants'
 
 Vue.use(Router)
 
@@ -35,6 +39,26 @@ export default new Router({
       path: '/contact',
       name: 'Contact',
       component: Contact
+    },
+    {
+      path: '/profile/id',
+      name: 'Profile',
+      component: Profile
+    },
+    {
+      path: '/profile/id/myplants',
+      name: 'MyPlants',
+      component: MyPlants
+    },
+    {
+      path: '/profile/id/reminders',
+      name: 'Reminders',
+      component: Reminders
+    },
+    {
+      path: '/allplants',
+      name: 'AllPlants',
+      component: AllPlants
     }
   ]
 })
